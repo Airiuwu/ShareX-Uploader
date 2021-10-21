@@ -32,8 +32,8 @@ async def uploadScreenshot():
 
 @app.route("/screenshots/<string:screenshotID>")
 async def getScreenshot(screenshotID):
-    if path.exists(f"{config.screenshotPath}/{screenshotID}.png"):    
-        return await send_file(f"{config.screenshotPath}/{screenshotID}.png")
+    if path.exists(f"{config.screenshotPath}{screenshotID}.png"):    
+        return await send_file(f"{config.screenshotPath}{screenshotID}.png")
     else:
         return "We could not find the screenshot you were looking for."
 
