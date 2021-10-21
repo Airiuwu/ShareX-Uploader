@@ -1,4 +1,4 @@
-NGINX configuration
+# NGINX configuration
 ```nginx
 server {
 	listen 80;
@@ -13,5 +13,9 @@ server {
 	}
 }
 ```
-ShareX Configuration
+# ShareX Configuration
 <img src="https://github.com/Airiuwu/ShareX-Uploader/blob/main/assets/unknown.png?raw=true"/>
+
+# Running the server
+* 1. Setup your config.py file
+* 2. `python3.9 main.py`
