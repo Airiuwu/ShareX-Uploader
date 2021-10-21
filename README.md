@@ -13,3 +13,5 @@ server {
 	}
 }
 ```
+ShareX Configuration
+<img src="https://github.com/Airiuwu/ShareX-Uploader/blob/main/assets/unknown.png?raw=true"/>
