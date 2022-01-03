@@ -3,3 +3,4 @@ port = '' # Port which you would like to run the server on
 secretKey = '' # https://www.lastpass.com/features/password-generator
 screenshotPath = '' # /home/Airi/ShareX-Uploader/screenshots/
 mainURL = '' # https://google.com/screenshots/
+allowedExtensions = ['gif', 'png', 'jpeg', 'jpg'] # Can be any file extension really, these are just left for general use
