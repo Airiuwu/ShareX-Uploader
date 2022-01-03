@@ -15,6 +15,7 @@ location /screenshots {
 ```
 # ShareX Configuration
 <img src="https://github.com/Airiuwu/ShareX-Uploader/blob/main/assets/unknown.png?raw=true"/>
+You can also execute `python3.9 utils/configGen.py`
 
 # Running the server
 * Setup your config.py file
