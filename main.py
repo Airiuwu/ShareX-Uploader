@@ -23,8 +23,8 @@ async def uploadScreenshot():
 	if not ss_file:
 		return "I see what you're doing here."
 
-	if not (ext := imghdr.what(h=ss_data, file="")) in ("gif", "png", "jpeg"):
-		return "Unknown extension."
+	if not (ext := imghdr.what(h=ss_data, file="")) in config.allowedExtensions:
+		return f"The file you uploaded is not an allowed file, allowed files are {' '.join(config.allowedExtensions)}"
 
 	screenshot_file = f"{config.screenshotPath}{ss_name}.{ext}"
 
