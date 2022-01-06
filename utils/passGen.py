@@ -18,7 +18,7 @@ async def main():
         print(f'Your randomly generated password is, {password}. Would you like to add it to your config? (Y/N)')
         answer = input()
 
-        if answer in ['Y', 'y']:
+        if answer.lower() is "y":
             with open('config.py', 'r') as f:
                 lines = f.readlines()
                 lines[2] = f"secretKey = '{password}' # Execute utils/passGen.py\n"
